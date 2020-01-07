@@ -1,0 +1,23 @@
+<script src="assets/js/script.js"></script>
+<meta name="view-port" content="width=device-width,initial-scale=1"/>
+<div class="main-section">
+<div id="myWork">
+        <div class="bracket1"><img src="assets/imges/back.png"/></div>
+         <div class="Store"> 
+             
+             <img name="slide"/>
+             <!--<a href="../Acessories & Glasses Store/index.html/"target="_blank"><img src="imges/Acc.PNG"/></a>-->
+            </div>
+        <div class="bracket2"><img src="assets/imges/next.png"/></div>
+    </div>
+
+
+    <div class = "space"></div>
+<div *ngFor="let item of view_product" class="item">
+<img src="{{item.image}}" />
+<h4> item name: {{item.name}} </h4>
+<h4> item name: {{item.price}} </h4>
+<button class="btn_pay" > details </button>
+
+</div>
+</div>

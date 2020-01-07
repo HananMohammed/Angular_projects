@@ -1,0 +1,23 @@
+<form [formGroup] ="logincontrol"(ngSubmit)="onSubmit()"  > 
+    <div class ="section" >
+            <h1> signUp..</h1>
+            <div class="space"></div>
+            <img src="assets/imges/photo2.jpg"  />
+            <div class="space"></div>
+            <input type ="file" class="File" />
+            <div class="space"></div>
+            <input type="text" formControlName = "username"  placeholder ="username"/>
+            <div class="space"></div>
+                   <input type="email " formControlName = "email" placeholder="your email@gmail.com "/>
+                   <div class="space"></div>
+                   <input type="tel" formControlName = "tel" placeholder="phone number"/>
+                   <div class="space"></div>
+                   <input type="password" formControlName = "password" placeholder="password plz"/>
+                   <div class="space"></div>
+                   <button type="submit" [disabled] ="!logincontrol.valid" class="btn_signup">Sign Up</button> 
+            <button type="submit" [disabled] ="!logincontrol.valid"  class="btn_cancel"> Cancel</button>
+            <div class="space"></div>
+            <p> if  you have an account plz <a href = "\login">login</a> ? </p>
+        
+      </div>
+    </form>

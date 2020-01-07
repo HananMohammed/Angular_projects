@@ -1,0 +1,17 @@
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<div class="space"></div>
+<div class ='main-section'>
+<div class="search">
+    <input  class="search_box" type="text" placeholder="Search here for our products"/>  
+   <button class="search_button">Search</button>
+   
+  </div><div class = "space"></div>
+<div *ngFor="let item of view_product" class="item">
+<img src="{{item.image}}" />
+<h4> item name: {{item.name}} </h4>
+<h4> item name: {{item.price}} </h4>
+<button class="btn_pay" > details </button>
+
+</div>
+
+</div>

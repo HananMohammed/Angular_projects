@@ -1,0 +1,20 @@
+<form [formGroup]="logincontrol" (ngSubmit)="submitForm()" >
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+ 
+<div class ="section">
+        <div class="login_design">
+                        <h1> login</h1>
+                        <input formControlName = "username" type ="text" placeholder="your email"/>
+                        <input formControlName = "password" type= "password" placeholder = "your Password "/> <br/>
+        
+                             <button type = "submit" [disabled] ="!logincontrol.valid"class="btn_login">  login </button> 
+        
+                             <button type = "submit" [disabled] ="!logincontrol.valid" class="btn_cancel">  Cancel </button> <br/>
+         
+                      <p> if you don't have account plz  <a href = "/signup"> sign up </a></p>
+        </div>
+                   
+        
+        </div>
+
+</form>
